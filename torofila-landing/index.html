@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Torofila — Performance, Desejo e Potência em Cápsula</title>
+
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+
+  <meta name="description" content="Torofila desperta o touro que existe em você. Taurina + Feno Grego em cápsula. Performance, desejo e potência onde importa." />
+  <meta name="theme-color" content="#0A0708" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Torofila — Desperte o Touro em Você" />
+  <meta property="og:description" content="Taurina + Feno Grego. Mais desejo, mais performance, mais virilidade." />
+  <meta property="og:image" content="assets/pote.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Torofila — Desperte o Touro em Você" />
+  <meta name="twitter:description" content="Performance, desejo e potência em cápsula." />
+  <meta name="twitter:image" content="assets/pote.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body class="is-loading">
+
+<!-- ════════════════════════════════ LOADING ════════════════════════════════ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <img class="loader__logo" src="assets/logo.png" alt="" />
+  <span class="loader__line"></span>
+</div>
+
+<!-- ════════════════════════════════ ATMOSFERA ════════════════════════════════ -->
+<div class="universe-bg" aria-hidden="true"></div>
+<div class="universe-noise" aria-hidden="true"></div>
+<div class="ember-cloud ember-cloud-1" aria-hidden="true"></div>
+<div class="ember-cloud ember-cloud-2" aria-hidden="true"></div>
+<div class="ember-cloud ember-cloud-3" aria-hidden="true"></div>
+<div class="sparks-layer" aria-hidden="true">
+  <span class="spark spark-1"></span>
+  <span class="spark spark-2"></span>
+  <span class="spark spark-3"></span>
+  <span class="spark spark-4"></span>
+  <span class="spark spark-5"></span>
+  <span class="spark spark-6"></span>
+  <span class="spark spark-7"></span>
+  <span class="spark spark-8"></span>
+</div>
+
+<!-- ════════════════════════════════ CURSOR ════════════════════════════════ -->
+<div class="cursor" aria-hidden="true">
+  <span class="cursor__dot"></span>
+  <span class="cursor__ring"></span>
+</div>
+
+<!-- ════════════════════════════════ PROGRESS ════════════════════════════════ -->
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ════════════════════════════════ NAV ════════════════════════════════ -->
+<nav class="nav" id="nav">
+  <a class="nav__logo" href="#hero" aria-label="Torofila">
+    <img src="assets/logo.png" alt="Torofila" />
+  </a>
+  <ul class="nav__links">
+    <li><a href="#manifesto">Manifesto</a></li>
+    <li><a href="#produto">Produto</a></li>
+    <li><a href="#formula">Fórmula</a></li>
+    <li><a href="#depoimentos">Depoimentos</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a class="nav__cta" href="#kits">
+    <span>Comprar</span>
+  </a>
+</nav>
+
+<!-- ════════════════════════════════ HERO ════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero__title-wrap">
+    <h1 class="hero__title">
+      Desperte<br/>
+      <em>o touro</em><br/>
+      que existe<br/>
+      <em>em você.</em>
+    </h1>
+  </div>
+
+  <div class="hero__product">
+    <span class="hero__product-ring" aria-hidden="true"></span>
+    <span class="hero__product-glow" aria-hidden="true"></span>
+    <div class="hero__product-img">
+      <img src="assets/pote.png" alt="Pote Torofila, 60 cápsulas com taurina e feno grego" fetchpriority="high" decoding="async" />
+    </div>
+    <span class="hero__product-pedestal" aria-hidden="true"></span>
+  </div>
+
+  <div class="hero__bottom">
+    <p class="hero__lede">
+      Performance, desejo e potência em cada cápsula. <strong style="color: var(--gold-bright);">Taurina + Feno Grego</strong> numa fórmula que o seu corpo entende, e o seu parceiro sente.
+    </p>
+    <div class="hero__actions">
+      <a class="btn-primary" href="#kits">
+        <span>Quero meu Torofila</span>
+        <svg viewBox="0 0 24 16" aria-hidden="true">
+          <path d="M2 8 L20 8 M14 2 L20 8 L14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="btn-ghost" href="#manifesto">
+        <span>Como funciona</span>
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2 L8 14 M3 9 L8 14 L13 9"/></svg>
+      </a>
+    </div>
+    <div class="hero__quick-stats">
+      <span><strong>60</strong>Cápsulas</span>
+      <span><strong>7</strong>Dias garantia</span>
+      <span><strong>+10K</strong>Homens</span>
+    </div>
+  </div>
+
+  <span class="hero__floor" aria-hidden="true"></span>
+</section>
+
+<!-- ════════════════════════════════ MARQUEE ════════════════════════════════ -->
+<div class="marquee">
+  <div class="marquee__track">
+    <span>Mais Desejo</span><i></i>
+    <span>Mais Potência</span><i></i>
+    <span>Mais Energia</span><i></i>
+    <span>Performance Animal</span><i></i>
+    <span>Taurina 200mg</span><i></i>
+    <span>Feno Grego 500mg</span><i></i>
+    <span>60 Cápsulas</span><i></i>
+    <span>Frete Grátis</span><i></i>
+    <span>Garantia 7 Dias</span><i></i>
+    <!-- duplicado pra loop seamless -->
+    <span>Mais Desejo</span><i></i>
+    <span>Mais Potência</span><i></i>
+    <span>Mais Energia</span><i></i>
+    <span>Performance Animal</span><i></i>
+    <span>Taurina 200mg</span><i></i>
+    <span>Feno Grego 500mg</span><i></i>
+    <span>60 Cápsulas</span><i></i>
+    <span>Frete Grátis</span><i></i>
+    <span>Garantia 7 Dias</span><i></i>
+  </div>
+</div>
+
+<!-- ════════════════════════════════ MANIFESTO ════════════════════════════════ -->
+<section class="manifesto reveal" id="manifesto">
+  <div class="manifesto__bg" aria-hidden="true">
+    <img src="assets/bg-manifesto-clean.jpg" alt="" loading="lazy" decoding="async" onerror="this.src='assets/bg-manifesto.jpg'" />
+  </div>
+  <div class="manifesto__overlay" aria-hidden="true"></div>
+  <div class="manifesto__grain" aria-hidden="true"></div>
+
+  <div class="manifesto__content">
+    <p class="manifesto__big">
+      Não é só sobre <em>desempenho.</em><br/>
+      É sobre o <em>homem</em> que você ainda pode ser.
+    </p>
+    <p class="manifesto__lede">
+      O cansaço chegou cedo. A vontade sumiu sem avisar. Você vê no espelho um cara que ainda tem fôlego, mas o corpo joga contra. <strong style="color: var(--gold-bright);">Torofila não é mágica, é química.</strong> Taurina e Feno Grego são compostos que o seu corpo conhece, e que faltavam pra você voltar a sentir tesão, vigor e confiança onde mais importa.
+    </p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ PAIN POINTS ════════════════════════════════ -->
+<section class="section reveal">
+  <div class="section__inner">
+    <div class="section__head">
+      <h2 class="section__title">Você <em>não está sozinho</em>.</h2>
+      <p class="section__sub">A queda de libido e energia atinge 1 em cada 3 homens depois dos 30. Mas isso não precisa ser o seu novo normal.</p>
+    </div>
+
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 15s1.5-2 4-2 4 2 4 2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
+        <h3 class="pain-card__title">A vontade sumiu</h3>
+        <p class="pain-card__text">Acabou o dia, deita na cama e dorme. O desejo que era automático virou exceção rara.</p>
+      </div>
+
+      <div class="pain-card">
+        <div class="pain-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3 class="pain-card__title">Cansaço o dia inteiro</h3>
+        <p class="pain-card__text">Café não resolve mais. Você acorda já sem energia pro que o dia exige, quanto mais pra noite.</p>
+      </div>
+
+      <div class="pain-card">
+        <div class="pain-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+        </div>
+        <h3 class="pain-card__title">Performance abaixo</h3>
+        <p class="pain-card__text">Não é só o desempenho: é a confiança que vai junto. E disso ninguém quer falar.</p>
+      </div>
+
+      <div class="pain-card">
+        <div class="pain-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </div>
+        <h3 class="pain-card__title">Insônia ou sono pesado</h3>
+        <p class="pain-card__text">Dorme mal, acorda travado. O sono não recarrega mais — só passa o tempo.</p>
+      </div>
+
+      <div class="pain-card">
+        <div class="pain-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3 class="pain-card__title">Tomou tudo que prometia</h3>
+        <p class="pain-card__text">Já gastou em produto que prometia milagre e entregou efeito colateral. Cansou.</p>
+      </div>
+
+      <div class="pain-card">
+        <div class="pain-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <h3 class="pain-card__title">Não fala disso com ninguém</h3>
+        <p class="pain-card__text">Falar de "performance" virou tabu. Mas calar só piora, porque o corpo continua pedindo solução.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════ PRODUCT SHOWCASE ════════════════════════════════ -->
+<section class="product-showcase reveal" id="produto">
+  <div class="product-showcase__inner">
+    <div class="product-showcase__visual">
+      <span class="product-bg-text" aria-hidden="true">FILA</span>
+      <span class="product-img-glow" aria-hidden="true"></span>
+      <div class="product-img">
+        <img src="assets/pote.png" alt="Pote Torofila — 60 cápsulas com taurina e feno grego" loading="lazy" decoding="async" />
+      </div>
+    </div>
+
+    <div class="product-showcase__copy">
+      <h2>Fórmula que <em>acorda</em> o homem.</h2>
+      <p style="font-size: 1.05rem; line-height: 1.6; color: var(--bone-soft); max-width: 50ch;">
+        Cápsula de origem natural, vegetal, sem hormônio sintético. Combina dois compostos que a ciência conhece há décadas em uma dose que faz diferença real, não placebo.
+      </p>
+
+      <ul class="benefits-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span><strong>Aumenta a libido:</strong> desejo de volta, sem espera nem desculpa.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span><strong>Mais energia e vigor:</strong> pro treino, pro trabalho e pra noite.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span><strong>Performance e potência:</strong> desempenho que dura entre quatro paredes.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span><strong>Recuperação muscular:</strong> taurina ajuda o seu corpo a aguentar mais.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span><strong>Sem efeitos colaterais:</strong> fórmula natural, sem causar dependência.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span><strong>Confiança de volta:</strong> porque o corpo manda recado pra cabeça.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════ FÓRMULA ════════════════════════════════ -->
+<section class="formula reveal" id="formula">
+  <div class="section__inner">
+    <div class="section__head">
+      <h2 class="section__title">Duas moléculas. <em>Uma missão.</em></h2>
+      <p class="section__sub">Não é fórmula secreta nem ingrediente exótico. É química que o corpo masculino reconhece, em dose que entrega resultado.</p>
+    </div>
+
+    <div class="formula__grid">
+      <article class="formula-card">
+        <span class="formula-card__badge">Composto 01</span>
+        <h3 class="formula-card__name">Taurina</h3>
+        <span class="formula-card__dose">200 mg · por cápsula</span>
+        <p class="formula-card__text">
+          Aminoácido condicional que o corpo produz, mas em quantidade insuficiente depois dos 30. Atua direto no sistema nervoso central, melhora foco, ajuda a recuperação muscular e regula a circulação. Resultado prático: mais energia mental e física no momento certo.
+        </p>
+        <ul class="formula-card__pills">
+          <li>Energia</li>
+          <li>Foco</li>
+          <li>Circulação</li>
+          <li>Recuperação</li>
+        </ul>
+      </article>
+
+      <article class="formula-card">
+        <span class="formula-card__badge">Composto 02</span>
+        <h3 class="formula-card__name">Feno-Grego</h3>
+        <span class="formula-card__dose">500 mg · por cápsula</span>
+        <p class="formula-card__text">
+          Erva milenar usada há mais de 3.000 anos em culturas que valorizavam virilidade. Estudos modernos mostram impacto direto na regulação dos níveis de testosterona livre, libido e desempenho sexual masculino. Não é mito: é planta que faz o homem voltar a sentir o homem.
+        </p>
+        <ul class="formula-card__pills">
+          <li>Libido</li>
+          <li>Testosterona</li>
+          <li>Performance</li>
+          <li>Vigor</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════ RITUAL · jornada scroll-driven ════════════════════════════════ -->
+<section class="ritual-journey" id="ritual" data-steps="3">
+  <div class="ritual-journey__sticky">
+    <div class="ritual-journey__head">
+      <h2 class="section__title">Ritual do <em>Touro</em>.</h2>
+      <p class="section__sub">Sem mistério, sem complicação. Três passos. Resultado real.</p>
+    </div>
+
+    <div class="ritual-journey__progress">
+      <div class="ritual-journey__progress-track">
+        <div class="ritual-journey__progress-fill" id="ritualProgressFill"></div>
+      </div>
+      <div class="ritual-journey__dots">
+        <button class="ritual-journey__dot is-active" data-idx="0" type="button">
+          <span class="ritual-journey__dot-num">01</span>
+          <span class="ritual-journey__dot-label">Manhã</span>
+        </button>
+        <button class="ritual-journey__dot" data-idx="1" type="button">
+          <span class="ritual-journey__dot-num">02</span>
+          <span class="ritual-journey__dot-label">Noite</span>
+        </button>
+        <button class="ritual-journey__dot" data-idx="2" type="button">
+          <span class="ritual-journey__dot-num">03</span>
+          <span class="ritual-journey__dot-label">Ritmo</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="ritual-journey__stage">
+      <article class="ritual-journey__step is-active" data-idx="0">
+        <span class="ritual-journey__step-num">01</span>
+        <h3 class="ritual-journey__step-title">Tome de manhã</h3>
+        <p class="ritual-journey__step-text">Uma cápsula com água, em jejum ou no café. Começa a agir já no primeiro dia, despertando o corpo antes do mundo despertar você.</p>
+      </article>
+      <article class="ritual-journey__step" data-idx="1">
+        <span class="ritual-journey__step-num">02</span>
+        <h3 class="ritual-journey__step-title">Reforce à noite</h3>
+        <p class="ritual-journey__step-text">Outra cápsula 30 a 40 minutos antes da relação ou do treino mais pesado. É aí que o pico aparece, e o seu corpo entrega o que prometeu.</p>
+      </article>
+      <article class="ritual-journey__step" data-idx="2">
+        <span class="ritual-journey__step-num">03</span>
+        <h3 class="ritual-journey__step-title">Mantenha o ritmo</h3>
+        <p class="ritual-journey__step-text">Os efeitos começam na primeira semana. Em 30 dias o seu corpo vira outro. Consistência é o que separa quem tenta de quem transforma.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ STATS ════════════════════════════════ -->
+<section class="stats reveal">
+  <div class="section__inner">
+    <div class="stats__grid">
+      <div class="stat">
+        <div class="stat__num"><span data-count="10000">0</span>+</div>
+        <div class="stat__label">Homens<br/>Despertaram</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num"><span data-count="97">0</span>%</div>
+        <div class="stat__label">Recomendariam<br/>a um amigo</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num"><span data-count="7">0</span></div>
+        <div class="stat__label">Dias de<br/>Garantia total</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num"><span data-count="60">0</span></div>
+        <div class="stat__label">Cápsulas<br/>por pote</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ DEPOIMENTOS ════════════════════════════════ -->
+<section class="testimonials reveal" id="depoimentos">
+  <div class="section__inner">
+    <div class="section__head">
+      <h2 class="section__title">Homens que <em>voltaram</em> pra dentro de casa.</h2>
+      <p class="section__sub">Não é depoimento de ator pago. É homem que tomou, sentiu e voltou pra contar.</p>
+    </div>
+  </div>
+
+  <div class="testimonials__viewport">
+    <div class="testimonials__track">
+      <article class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__quote">No quinto dia minha esposa me perguntou o que tinha mudado. Eu só sorri. Agora ela quer que eu nunca pare.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">RC</div>
+          <div>
+            <div class="testimonial__name">Rodrigo C.</div>
+            <div class="testimonial__meta">42 anos · São Paulo</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__quote">Tomei vários e todos me deixavam de cabeça quente. Esse é o primeiro que entrega o que promete sem efeito ruim. Voltei a ter desejo todo dia.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">TM</div>
+          <div>
+            <div class="testimonial__name">Thiago M.</div>
+            <div class="testimonial__meta">38 anos · Belo Horizonte</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__quote">Achei que era idade. Não era. Em duas semanas voltei a acordar com vontade, e a noite virou minha de novo.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">AS</div>
+          <div>
+            <div class="testimonial__name">Alexandre S.</div>
+            <div class="testimonial__meta">47 anos · Curitiba</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__quote">Performance dobrou no treino e na cama. Minha namorada agradece. Eu também.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">FB</div>
+          <div>
+            <div class="testimonial__name">Felipe B.</div>
+            <div class="testimonial__meta">31 anos · Rio de Janeiro</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__quote">Cansaço crônico era a regra. Hoje, depois de um mês, é exceção. Voltei a ter o vigor que tinha aos 25.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">DV</div>
+          <div>
+            <div class="testimonial__name">Daniel V.</div>
+            <div class="testimonial__meta">44 anos · Porto Alegre</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__quote">Achei que era marketing. Comprei pra testar. Sou homem novo e meu casamento agradece. Já tô no terceiro pote.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">MR</div>
+          <div>
+            <div class="testimonial__name">Marco R.</div>
+            <div class="testimonial__meta">52 anos · Salvador</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- duplicação para loop infinito seamless -->
+      <article class="testimonial" aria-hidden="true">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__quote">No quinto dia minha esposa me perguntou o que tinha mudado. Eu só sorri. Agora ela quer que eu nunca pare.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">RC</div>
+          <div>
+            <div class="testimonial__name">Rodrigo C.</div>
+            <div class="testimonial__meta">42 anos · São Paulo</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial" aria-hidden="true">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__quote">Tomei vários e todos me deixavam de cabeça quente. Esse é o primeiro que entrega o que promete sem efeito ruim. Voltei a ter desejo todo dia.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">TM</div>
+          <div>
+            <div class="testimonial__name">Thiago M.</div>
+            <div class="testimonial__meta">38 anos · Belo Horizonte</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial" aria-hidden="true">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__quote">Achei que era idade. Não era. Em duas semanas voltei a acordar com vontade, e a noite virou minha de novo.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">AS</div>
+          <div>
+            <div class="testimonial__name">Alexandre S.</div>
+            <div class="testimonial__meta">47 anos · Curitiba</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial" aria-hidden="true">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__quote">Performance dobrou no treino e na cama. Minha namorada agradece. Eu também.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">FB</div>
+          <div>
+            <div class="testimonial__name">Felipe B.</div>
+            <div class="testimonial__meta">31 anos · Rio de Janeiro</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial" aria-hidden="true">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__quote">Cansaço crônico era a regra. Hoje, depois de um mês, é exceção. Voltei a ter o vigor que tinha aos 25.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">DV</div>
+          <div>
+            <div class="testimonial__name">Daniel V.</div>
+            <div class="testimonial__meta">44 anos · Porto Alegre</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial" aria-hidden="true">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__quote">Achei que era marketing. Comprei pra testar. Sou homem novo e meu casamento agradece. Já tô no terceiro pote.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">MR</div>
+          <div>
+            <div class="testimonial__name">Marco R.</div>
+            <div class="testimonial__meta">52 anos · Salvador</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════ KITS ════════════════════════════════ -->
+<section class="kits reveal" id="kits">
+  <span class="kits__bg-text" aria-hidden="true">FILA</span>
+
+  <div class="section__inner">
+    <div class="section__head">
+      <h2 class="section__title">O <em>seu touro</em> está pronto.</h2>
+      <p class="section__sub">Quanto mais consistência, mais transformação. Frete grátis em todos os kits. Garantia incondicional de 7 dias.</p>
+    </div>
+
+    <div class="kits__grid">
+
+      <!-- KIT INICIAL -->
+      <article class="kit kit--inicial">
+        <span class="kit__badge">33% OFF</span>
+        <div class="kit__visual">
+          <span class="kit__visual-glow"></span>
+          <div class="kit__visual-stack">
+            <img src="assets/pote.png" alt="" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="kit__head">
+          <h3 class="kit__name">Kit Inicial</h3>
+        </div>
+
+        <ul class="kit__features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>1 pote · 60 cápsulas</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Tratamento 30 dias</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Frete grátis Brasil</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Garantia 7 dias</span></li>
+        </ul>
+
+        <div class="kit__price">
+          <span class="kit__price-old">De R$ 149,90</span>
+          <span class="kit__price-now"><span class="currency">R$</span>99,90</span>
+          <span class="kit__price-installment">Em até 12x de R$ 10,98</span>
+        </div>
+
+        <a class="kit__cta" href="https://app.coinzz.com.br/checkout/torofila-1-pote-voce-um-deus-grego-0" target="_blank" rel="noopener">
+          <span>Comprar agora</span>
+          <svg viewBox="0 0 24 16" aria-hidden="true">
+            <path d="M2 8 L20 8 M14 2 L20 8 L14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <span class="kit__shipping">✦ Frete grátis ✦</span>
+      </article>
+
+      <!-- KIT TURBO -->
+      <article class="kit kit--turbo kit--featured">
+        <span class="kit__badge">43% OFF</span>
+        <div class="kit__visual">
+          <span class="kit__visual-glow"></span>
+          <div class="kit__visual-stack">
+            <img src="assets/pote.png" alt="" loading="lazy" />
+            <img src="assets/pote.png" alt="" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="kit__head">
+          <h3 class="kit__name">Kit Turbo</h3>
+        </div>
+
+        <ul class="kit__features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>2 potes · 120 cápsulas</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Tratamento 60 dias completo</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Frete grátis prioritário</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Economia de R$ 130</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Garantia 7 dias</span></li>
+        </ul>
+
+        <div class="kit__price">
+          <span class="kit__price-old">De R$ 299,90</span>
+          <span class="kit__price-now"><span class="currency">R$</span>169,90</span>
+          <span class="kit__price-installment">Em até 12x de R$ 17,57</span>
+        </div>
+
+        <a class="kit__cta" href="https://app.coinzz.com.br/checkout/torofila-2-potes-resultados-bruto-0" target="_blank" rel="noopener">
+          <span>Comprar agora</span>
+          <svg viewBox="0 0 24 16" aria-hidden="true">
+            <path d="M2 8 L20 8 M14 2 L20 8 L14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <span class="kit__shipping">✦ Frete grátis prioritário ✦</span>
+      </article>
+
+      <!-- KIT PREMIUM -->
+      <article class="kit kit--premium">
+        <span class="kit__badge">48% OFF</span>
+        <div class="kit__visual">
+          <span class="kit__visual-glow"></span>
+          <div class="kit__visual-stack">
+            <img src="assets/pote.png" alt="" loading="lazy" />
+            <img src="assets/pote.png" alt="" loading="lazy" />
+            <img src="assets/pote.png" alt="" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="kit__head">
+          <h3 class="kit__name">Kit Premium</h3>
+        </div>
+
+        <ul class="kit__features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>3 potes · 180 cápsulas</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Tratamento 90 dias completo</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Frete grátis express</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Economia de R$ 220</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg><span>Garantia 7 dias</span></li>
+        </ul>
+
+        <div class="kit__price">
+          <span class="kit__price-old">De R$ 449,90</span>
+          <span class="kit__price-now"><span class="currency">R$</span>229,90</span>
+          <span class="kit__price-installment">Em até 12x de R$ 25,26</span>
+        </div>
+
+        <a class="kit__cta" href="https://app.coinzz.com.br/checkout/torofila---3-potes-0" target="_blank" rel="noopener">
+          <span>Comprar agora</span>
+          <svg viewBox="0 0 24 16" aria-hidden="true">
+            <path d="M2 8 L20 8 M14 2 L20 8 L14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <span class="kit__shipping">✦ Frete grátis express ✦</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ GARANTIA ════════════════════════════════ -->
+<section class="guarantee reveal">
+  <div class="guarantee__inner">
+    <div class="guarantee__seal">
+      <div class="guarantee__seal-content">
+        <div class="guarantee__seal-num">7</div>
+        <div class="guarantee__seal-label">Dias</div>
+      </div>
+    </div>
+    <div class="guarantee__copy">
+      <h3>Garantia <em>incondicional</em>.<br/>De homem pra homem.</h3>
+      <p>
+        Você toma por 7 dias. Se em qualquer momento sentir que o Torofila não te entregou o que prometemos, devolve a embalagem e a gente devolve cada centavo. Sem pergunta, sem burocracia, sem corre. <strong style="color: var(--gold-bright);">O risco é nosso. A transformação é sua.</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ FAQ ════════════════════════════════ -->
+<section class="faq reveal" id="faq">
+  <div class="section__inner">
+    <div class="section__head">
+      <h2 class="section__title">Perguntas <em>frequentes</em>.</h2>
+    </div>
+
+    <ul class="faq__list">
+      <li class="faq-item">
+        <button class="faq-item__q" type="button">
+          <span>Em quanto tempo eu sinto efeito?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <div class="faq-item__a-inner">Os primeiros sinais aparecem entre 5 e 10 dias: mais energia, foco e disposição. O efeito sobre libido e performance se consolida no fim da primeira semana e atinge o pico depois de 30 dias de uso contínuo.</div>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-item__q" type="button">
+          <span>Tem efeito colateral?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <div class="faq-item__a-inner">Torofila usa Taurina e Feno-Grego, dois compostos amplamente estudados e considerados seguros. Não causa dependência, não eleva pressão como estimulantes sintéticos e não tem efeito rebote. Em casos raros, pode ocorrer leve desconforto digestivo nos primeiros dias.</div>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-item__q" type="button">
+          <span>Como tomar?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <div class="faq-item__a-inner">Uma cápsula pela manhã com água, e outra cápsula 30-40 minutos antes da relação ou do treino mais intenso. Total: 2 cápsulas por dia. Cada pote dura 30 dias.</div>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-item__q" type="button">
+          <span>Tem idade mínima ou máxima?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <div class="faq-item__a-inner">Indicado para homens a partir de 18 anos. Não há idade máxima: homens acima dos 60 frequentemente relatam o salto mais expressivo de energia e libido.</div>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-item__q" type="button">
+          <span>Posso tomar com outros remédios?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <div class="faq-item__a-inner">Compatível com a maioria dos medicamentos. Se você usa anticoagulantes, controla pressão arterial, faz uso de hormônios ou tem condição cardíaca, recomendamos checar com seu médico antes de iniciar: é uma conversa simples.</div>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-item__q" type="button">
+          <span>Como funciona a garantia de 7 dias?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <div class="faq-item__a-inner">Toma por 7 dias. Se não sentir o resultado prometido, manda a embalagem (mesmo vazia) de volta e a gente devolve 100% do valor pago. Sem pergunta, sem corre. O risco é todo nosso.</div>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-item__q" type="button">
+          <span>Em quanto tempo recebo?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <div class="faq-item__a-inner">Capitais: 2 a 5 dias úteis. Interior: 5 a 10 dias úteis. Você recebe o código de rastreio no e-mail assim que o pedido sai do nosso centro de distribuição.</div>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-item__q" type="button">
+          <span>É seguro? Tem registro?</span>
+          <span class="faq-item__icon">+</span>
+        </button>
+        <div class="faq-item__a">
+          <div class="faq-item__a-inner">Sim. Suplemento alimentar fabricado em laboratório certificado, com Boas Práticas de Fabricação e ingredientes de origem rastreável. Vendido legalmente em todo o Brasil.</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ FOOTER ════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="assets/logo.png" alt="Torofila" />
+      <p>Performance, desejo e potência em cápsula. Suplemento alimentar masculino com Taurina e Feno-Grego, fórmula vegetal, sem hormônio sintético.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navegar</h4>
+      <ul>
+        <li><a href="#manifesto">Manifesto</a></li>
+        <li><a href="#produto">Produto</a></li>
+        <li><a href="#formula">Fórmula</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#kits">Kits</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Suporte</h4>
+      <ul>
+        <li>contato@torofila.com.br</li>
+        <li>WhatsApp · 0800 000 0000</li>
+        <li>Seg–Sex · 09h às 18h</li>
+        <li><a href="#">Trocas e devoluções</a></li>
+        <li><a href="#">Política de privacidade</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <span>© 2026 Torofila · Todos os direitos reservados</span>
+    <span>Suplemento alimentar · Resultados podem variar</span>
+  </div>
+
+  <div class="footer__credit">
+    <span>Desenvolvido por </span>
+    <a href="https://www.leonardoferreirr.com.br/pt" target="_blank" rel="noopener noreferrer" class="footer__credit-link">Leonardo Ferreira</a>
+  </div>
+
+  <span class="footer__bigword" aria-hidden="true">TOROFILA</span>
+</footer>
+
+<!-- ════════════════════════════════ STICKY MOBILE CTA ════════════════════════════════ -->
+<a class="sticky-cta" href="#kits">Quero meu Torofila →</a>
+
+<script src="scripts/main.js" defer></script>
+</body>
+</html>

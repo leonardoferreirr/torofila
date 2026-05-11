@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<style>
+  :root {
+    --ink: #0A0708;
+    --ink-soft: #14100C;
+    --gold: #D4AF37;
+    --gold-bright: #FFD166;
+    --gold-glow: rgba(212, 175, 55, 0.55);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1080px; overflow: hidden; }
+  body {
+    background: radial-gradient(ellipse at center, var(--ink-soft) 0%, var(--ink) 75%);
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  .glow {
+    position: absolute;
+    inset: 18%;
+    background: radial-gradient(ellipse at center, var(--gold-glow) 0%, transparent 65%);
+    filter: blur(80px);
+    z-index: 0;
+  }
+  .stack {
+    position: relative;
+    width: 80%;
+    height: 75%;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+  }
+  .stack img {
+    position: absolute;
+    object-fit: contain;
+    filter: drop-shadow(0 30px 50px rgba(0,0,0,0.7))
+            drop-shadow(0 0 45px var(--gold-glow));
+  }
+  /* 2 potes: lado a lado, ligeira sobreposicao e tilt opostos */
+  .stack img:nth-child(1) {
+    width: 58%;
+    transform: translateX(-22%) translateY(2%) rotate(-9deg);
+    z-index: 2;
+  }
+  .stack img:nth-child(2) {
+    width: 62%;
+    transform: translateX(20%) translateY(-2%) rotate(7deg);
+    z-index: 3;
+  }
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="stack">
+    <img src="../assets/pote.png" alt="" />
+    <img src="../assets/pote.png" alt="" />
+  </div>
+</body>
+</html>
