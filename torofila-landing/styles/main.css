@@ -936,11 +936,11 @@ body.is-loading { overflow: hidden; }
   display: grid; place-items: center;
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: clamp(8rem, 22vw, 22rem);
+  font-size: clamp(10rem, 22vw, 22rem);
   line-height: 1;
   letter-spacing: -0.04em;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(212, 175, 55, 0.18);
+  -webkit-text-stroke: 1px rgba(212, 175, 55, 0.22);
   user-select: none; pointer-events: none;
   z-index: 0;
 }
@@ -1960,7 +1960,7 @@ body.is-loading { overflow: hidden; }
   .hero__bg-text { font-size: clamp(5rem, 18vw, 10rem); }
 
   .product-showcase__inner { grid-template-columns: 1fr; }
-  .product-bg-text { font-size: clamp(5rem, 22vw, 12rem); }
+  .product-bg-text { font-size: clamp(8rem, 32vw, 16rem); -webkit-text-stroke-width: 1.5px; }
   .stats__grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
   .ritual__grid::before { display: none; }
   .footer__inner { grid-template-columns: 1fr; gap: 2rem; }
