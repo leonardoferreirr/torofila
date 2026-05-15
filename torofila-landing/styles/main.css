@@ -647,13 +647,23 @@ body.is-loading { overflow: hidden; }
 .manifesto__bg {
   position: absolute; inset: 0; z-index: 0; overflow: hidden;
 }
+.manifesto__bg picture,
 .manifesto__bg img {
-  width: 100%; height: 100%; object-fit: cover;
-  object-position: center 35%;
-  filter: grayscale(0.55) contrast(1.18) brightness(0.55) sepia(0.22) hue-rotate(-12deg);
-  opacity: 0.5;
-  transform: scale(1.15);
+  width: 100%; height: 100%; display: block;
+}
+.manifesto__bg img {
+  object-fit: cover;
+  object-position: right center;
+  filter: contrast(1.05) brightness(0.85);
+  opacity: 0.95;
+  transform: scale(1.05);
   animation: manifestoZoom 22s ease-out forwards;
+}
+@media (max-width: 768px) {
+  .manifesto__bg img {
+    object-position: center 25%;
+    opacity: 0.55;
+  }
 }
 @keyframes manifestoZoom {
   0%   { transform: scale(1.22); }
@@ -662,9 +672,15 @@ body.is-loading { overflow: hidden; }
 .manifesto__overlay {
   position: absolute; inset: 0; z-index: 1;
   background:
-    linear-gradient(180deg, rgba(10, 7, 8, 0.85) 0%, rgba(10, 7, 8, 0.45) 40%, rgba(10, 7, 8, 0.55) 60%, rgba(10, 7, 8, 0.92) 100%),
-    linear-gradient(90deg, rgba(10, 7, 8, 0.7) 0%, rgba(10, 7, 8, 0.2) 50%, rgba(10, 7, 8, 0.7) 100%);
+    linear-gradient(180deg, rgba(10, 7, 8, 0.55) 0%, rgba(10, 7, 8, 0.25) 40%, rgba(10, 7, 8, 0.35) 60%, rgba(10, 7, 8, 0.75) 100%),
+    linear-gradient(90deg, rgba(10, 7, 8, 0.75) 0%, rgba(10, 7, 8, 0.15) 55%, rgba(10, 7, 8, 0) 100%);
   pointer-events: none;
+}
+@media (max-width: 768px) {
+  .manifesto__overlay {
+    background:
+      linear-gradient(180deg, rgba(10, 7, 8, 0.75) 0%, rgba(10, 7, 8, 0.45) 50%, rgba(10, 7, 8, 0.9) 100%);
+  }
 }
 .manifesto__grain {
   position: absolute; inset: 0; z-index: 2;
@@ -864,10 +880,44 @@ body.is-loading { overflow: hidden; }
   position: relative;
   width: 100vw;
   z-index: 2;
-  background: linear-gradient(180deg, var(--ink) 0%, #14100C 50%, var(--ink) 100%);
+  background: var(--ink);
   padding: clamp(3rem, 8vh, 5rem) 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+.product-showcase__bg {
+  position: absolute; inset: 0; z-index: 0; overflow: hidden;
+}
+.product-showcase__bg picture,
+.product-showcase__bg img {
+  width: 100%; height: 100%; display: block;
+}
+.product-showcase__bg img {
+  object-fit: cover;
+  object-position: left center;
+  filter: contrast(1.08) brightness(0.85);
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+.product-showcase__overlay {
+  position: absolute; inset: 0; z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(10, 7, 8, 0.55) 0%, rgba(10, 7, 8, 0.30) 35%, rgba(10, 7, 8, 0.45) 65%, rgba(10, 7, 8, 0.85) 100%),
+    linear-gradient(90deg, rgba(10, 7, 8, 0) 0%, rgba(10, 7, 8, 0.15) 40%, rgba(10, 7, 8, 0.85) 100%);
+}
+@media (max-width: 768px) {
+  .product-showcase__bg img {
+    object-position: center 30%;
+    opacity: 0.45;
+  }
+  .product-showcase__overlay {
+    background:
+      linear-gradient(180deg, rgba(10, 7, 8, 0.8) 0%, rgba(10, 7, 8, 0.55) 50%, rgba(10, 7, 8, 0.92) 100%);
+  }
 }
 .product-showcase__inner {
+  position: relative; z-index: 2;
   max-width: 1280px; margin: 0 auto;
   padding: 0 clamp(1.5rem, 4vw, 4rem);
   display: grid;

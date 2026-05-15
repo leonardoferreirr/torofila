@@ -153,7 +153,10 @@
 <!-- ════════════════════════════════ MANIFESTO ════════════════════════════════ -->
 <section class="manifesto reveal" id="manifesto">
   <div class="manifesto__bg" aria-hidden="true">
-    <img src="assets/bg-manifesto-clean.jpg" alt="" loading="lazy" decoding="async" onerror="this.src='assets/bg-manifesto.jpg'" />
+    <picture>
+      <source media="(max-width: 768px)" srcset="assets/bg-couple-manifesto-mobile.jpg" />
+      <img src="assets/bg-couple-manifesto-desktop.jpg" alt="" loading="lazy" decoding="async" />
+    </picture>
   </div>
   <div class="manifesto__overlay" aria-hidden="true"></div>
   <div class="manifesto__grain" aria-hidden="true"></div>
@@ -233,6 +236,13 @@
 
 <!-- ════════════════════════════════ PRODUCT SHOWCASE ════════════════════════════════ -->
 <section class="product-showcase reveal" id="produto">
+  <div class="product-showcase__bg" aria-hidden="true">
+    <picture>
+      <source media="(max-width: 768px)" srcset="assets/bg-couple-formula-mobile.jpg" />
+      <img src="assets/bg-couple-formula-desktop.jpg" alt="" loading="lazy" decoding="async" />
+    </picture>
+  </div>
+  <div class="product-showcase__overlay" aria-hidden="true"></div>
   <div class="product-showcase__inner">
     <div class="product-showcase__visual">
       <span class="product-bg-text" aria-hidden="true">FILA</span>
