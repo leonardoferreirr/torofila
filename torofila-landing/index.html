@@ -81,6 +81,14 @@
 
 <!-- ════════════════════════════════ HERO ════════════════════════════════ -->
 <section class="hero" id="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <picture>
+      <source media="(max-width: 768px)" srcset="assets/hero-mobile.jpg" />
+      <img src="assets/hero-desktop.jpg" alt="" fetchpriority="high" decoding="async" />
+    </picture>
+  </div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+
   <div class="hero__title-wrap">
     <h1 class="hero__title">
       Desperte<br/>
@@ -88,15 +96,6 @@
       que existe<br/>
       <em>em você.</em>
     </h1>
-  </div>
-
-  <div class="hero__product">
-    <span class="hero__product-ring" aria-hidden="true"></span>
-    <span class="hero__product-glow" aria-hidden="true"></span>
-    <div class="hero__product-img">
-      <img src="assets/pote.png" alt="Pote Torofila, 60 cápsulas com taurina e feno grego" fetchpriority="high" decoding="async" />
-    </div>
-    <span class="hero__product-pedestal" aria-hidden="true"></span>
   </div>
 
   <div class="hero__bottom">
@@ -154,21 +153,32 @@
 <section class="manifesto reveal" id="manifesto">
   <div class="manifesto__bg" aria-hidden="true">
     <picture>
-      <source media="(max-width: 768px)" srcset="assets/bg-couple-manifesto-mobile.jpg" />
-      <img src="assets/bg-couple-manifesto-desktop.jpg" alt="" loading="lazy" decoding="async" />
+      <source media="(max-width: 768px)" srcset="assets/bg-manifesto2-mobile.jpg" />
+      <img src="assets/bg-manifesto2-desktop.jpg" alt="" loading="lazy" decoding="async" />
     </picture>
   </div>
   <div class="manifesto__overlay" aria-hidden="true"></div>
   <div class="manifesto__grain" aria-hidden="true"></div>
 
-  <div class="manifesto__content">
-    <p class="manifesto__big">
-      Não é só sobre <em>desempenho.</em><br/>
-      É sobre o <em>homem</em> que você ainda pode ser.
-    </p>
-    <p class="manifesto__lede">
-      O cansaço chegou cedo. A vontade sumiu sem avisar. Você vê no espelho um cara que ainda tem fôlego, mas o corpo joga contra. <strong style="color: var(--gold-bright);">Torofila não é mágica, é química.</strong> Taurina e Feno Grego são compostos que o seu corpo conhece, e que faltavam pra você voltar a sentir tesão, vigor e confiança onde mais importa.
-    </p>
+  <div class="manifesto__layout">
+    <div class="manifesto__content">
+      <p class="manifesto__big">
+        Não é só sobre <em>desempenho.</em><br/>
+        É sobre o <em>homem</em> que você ainda pode ser.
+      </p>
+      <p class="manifesto__lede">
+        O cansaço chegou cedo. A vontade sumiu sem avisar. Você vê no espelho um cara que ainda tem fôlego, mas o corpo joga contra. <strong style="color: var(--gold-bright);">Torofila não é mágica, é química.</strong> Taurina e Feno Grego são compostos que o seu corpo conhece, e que faltavam pra você voltar a sentir tesão, vigor e confiança onde mais importa.
+      </p>
+    </div>
+
+    <div class="hero__product">
+      <span class="hero__product-ring" aria-hidden="true"></span>
+      <span class="hero__product-glow" aria-hidden="true"></span>
+      <div class="hero__product-img">
+        <img src="assets/pote.png" alt="Pote Torofila, 60 cápsulas com taurina e feno grego" decoding="async" />
+      </div>
+      <span class="hero__product-pedestal" aria-hidden="true"></span>
+    </div>
   </div>
 </section>
 
@@ -238,8 +248,8 @@
 <section class="product-showcase reveal" id="produto">
   <div class="product-showcase__bg" aria-hidden="true">
     <picture>
-      <source media="(max-width: 768px)" srcset="assets/bg-couple-formula-mobile.jpg" />
-      <img src="assets/bg-couple-formula-desktop.jpg" alt="" loading="lazy" decoding="async" />
+      <source media="(max-width: 768px)" srcset="assets/bg-formula2-mobile.jpg" />
+      <img src="assets/bg-formula2-desktop.jpg" alt="" loading="lazy" decoding="async" />
     </picture>
   </div>
   <div class="product-showcase__overlay" aria-hidden="true"></div>
@@ -333,6 +343,13 @@
 <!-- ════════════════════════════════ RITUAL · jornada scroll-driven ════════════════════════════════ -->
 <section class="ritual-journey" id="ritual" data-steps="3">
   <div class="ritual-journey__sticky">
+    <div class="ritual-journey__bg" aria-hidden="true">
+      <picture>
+        <source media="(max-width: 768px)" srcset="assets/bg-couple-formula-mobile.jpg" />
+        <img src="assets/bg-couple-formula-desktop.jpg" alt="" loading="lazy" decoding="async" />
+      </picture>
+    </div>
+    <div class="ritual-journey__overlay" aria-hidden="true"></div>
     <div class="ritual-journey__head">
       <h2 class="section__title">Ritual do <em>Touro</em>.</h2>
       <p class="section__sub">Sem mistério, sem complicação. Três passos. Resultado real.</p>
