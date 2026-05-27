@@ -2099,7 +2099,20 @@ body.is-loading { overflow: hidden; }
     linear-gradient(180deg, rgba(10,7,8,0.55) 0%, rgba(10,7,8,0.28) 35%, rgba(10,7,8,0.55) 70%, rgba(10,7,8,0.96) 100%),
     radial-gradient(ellipse 75% 60% at 50% 42%, transparent 30%, rgba(10,7,8,0.45) 100%);
 }
-.hero__title-wrap { align-items: center; text-align: center; }
+/* HERO desktop: conteúdo à esquerda, alinhado à esquerda */
+@media (min-width: 1101px) {
+  .hero { justify-items: start; }
+  .hero__title-wrap { align-items: flex-start; text-align: left; }
+  .hero__bottom { align-items: flex-start; text-align: left; margin: 0; max-width: 640px; }
+  .hero__lede { text-align: left; }
+  .hero__actions { justify-content: flex-start; }
+  .hero__quick-stats { justify-content: flex-start; }
+}
+/* HERO mobile: centralizado + título um pouco maior */
+@media (max-width: 768px) {
+  .hero__title-wrap { align-items: center; text-align: center; }
+  .hero__title { font-size: clamp(3.3rem, 12vw, 4.4rem); }
+}
 
 /* MANIFESTO: layout 2 colunas (texto + pote) e título menor */
 .manifesto__layout {
